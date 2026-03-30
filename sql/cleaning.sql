@@ -1,7 +1,7 @@
 SELECT
-    Date AS clean_date,
-    TRIM(LOWER(Category)) AS clean_category,
-    CAST(PHP AS DECIMAL(10,2)) AS clean_php
+    Date AS date,
+    TRIM(LOWER(Category)) AS category,
+    CAST(PHP AS DECIMAL(10,2)) AS php
 FROM personal_finance
 WHERE
     income_expense = 'Expense'
